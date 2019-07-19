@@ -1,0 +1,19 @@
+---
+version: '2'
+services:
+
+  grafana:
+    image: grafana/grafana
+    hostname: grafana
+    container_name: grafana
+    ports:
+      - "4000:4000"
+
+  backend: 
+    build: ./docker_images/backend/
+    image: vladimiv/backend
+    hostname: backend
+    container_name: backend
+    ports:
+      - "5000:80"
+    command: ["python3", "app.py"]
