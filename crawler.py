@@ -3,6 +3,4 @@ import sys
 class Crawler:
 
     def __init__(self, directory=""):
-        self.root_dir=directory
-    
-    def 
+        #self.root_dir=director
