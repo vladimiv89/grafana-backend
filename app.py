@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from calendar import timegm
 from datetime import datetime
-import _strptime  # https://bugs.python.org/issue7980
+import _strptime
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 
@@ -81,4 +81,4 @@ def tag_values():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5000)
